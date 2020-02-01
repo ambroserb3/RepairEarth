@@ -668,7 +668,7 @@ Transform:
   m_GameObject: {fileID: 1127627789}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.16, y: 2, z: -7.4476047}
-  m_LocalScale: {x: 0.327663, y: 0.34806502, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -779,10 +779,10 @@ EdgeCollider2D:
   m_EdgeRadius: 0
   m_Points:
   - {x: 0.5191709, y: -4.479006}
-  - {x: -4.247834, y: -4.0830035}
+  - {x: -4.314885, y: -4.38473}
   - {x: -4.4480963, y: 4.5919766}
   - {x: 4.565249, y: 4.610742}
-  - {x: 4.488656, y: -4.063335}
+  - {x: 4.4886565, y: -4.29801}
   - {x: 0.45341754, y: -4.457254}
 --- !u!1 &1529227111
 GameObject:
