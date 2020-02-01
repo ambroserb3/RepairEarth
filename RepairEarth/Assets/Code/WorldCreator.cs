@@ -7,6 +7,10 @@ public class WorldCreator : MonoBehaviour
     public GameObject dirtGround;
     public GameObject water;
     public GameObject grassGround;
+    public GameObject treeGreen;
+    public GameObject treeWhite;
+    public GameObject treeYellow;
+
     public Vector3 startLoc = new Vector3(0, -2f, 2);
 
     // Start is called before the first frame update
@@ -42,6 +46,21 @@ public class WorldCreator : MonoBehaviour
             for (int j = -5; j < 5; ++j)
             {
                 Instantiate(dirtGround, startLoc + new Vector3(i, j, 0), Quaternion.identity);
+            }
+        }
+
+        for (int i = -90; i <= 90; ++i)
+        {
+            if (i < -80 || i > -20)
+            {
+                if (j != 0)
+                {
+                    Instantiate(dirtGround, startLoc + new Vector3(i, j, 0), Quaternion.identity);
+                }
+                else
+                {
+                    Instantiate(grassGround, startLoc + new Vector3(i, j, 0), Quaternion.identity);
+                }
             }
         }
     }
