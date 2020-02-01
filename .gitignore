@@ -10,6 +10,11 @@
 /RepairEarth/[Ll]ogs/
 /RepairEarth/[Mm]emoryCaptures/
 
+RepairEarth/Packages/manifest.json
+RepairEarth/ProjectSettings/ProjectSettings.asset
+RepairEarth/ProjectSettings/ProjectVersion.txt
+
+
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !RepairEarth/[Aa]ssets/**/*.meta
 
