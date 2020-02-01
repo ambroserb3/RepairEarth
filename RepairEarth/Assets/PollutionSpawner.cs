@@ -49,7 +49,6 @@ public class PollutionSpawner : MonoBehaviour
             if (!obj.activeSelf)
             {
                 obj.SetActive(true);
-                Debug.Log("Cow");
                 return;
             }
         }
