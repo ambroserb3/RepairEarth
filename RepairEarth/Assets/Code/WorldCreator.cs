@@ -5,6 +5,7 @@ using UnityEngine;
 public class WorldCreator : MonoBehaviour
 {
     public GameObject dirtGround;
+    public GameObject water;
     public GameObject grassGround;
     public Vector3 startLoc = new Vector3(0, -2f, 2);
 
@@ -16,14 +17,31 @@ public class WorldCreator : MonoBehaviour
         {
             for (int j = -5; j <= 0; ++j)
             {
-                if (j != 0)
+
+                if (i < -80 || i > -20)
                 {
-                    Instantiate(dirtGround, startLoc + new Vector3(i, j, 0), Quaternion.identity);
+                    if (j != 0)
+                    {
+                        Instantiate(dirtGround, startLoc + new Vector3(i, j, 0), Quaternion.identity);
+                    }
+                    else
+                    {
+                        Instantiate(grassGround, startLoc + new Vector3(i, j, 0), Quaternion.identity);
+                    }
                 }
+
                 else
                 {
-                    Instantiate(grassGround, startLoc + new Vector3(i, j, 0), Quaternion.identity);
+                    Instantiate(water, startLoc + new Vector3(i, j, 0), Quaternion.identity);
                 }
+            }
+        }
+
+        for (int i = -101; i <= 101; i += 202)
+        {
+            for (int j = -5; j < 5; ++j)
+            {
+                Instantiate(dirtGround, startLoc + new Vector3(i, j, 0), Quaternion.identity);
             }
         }
     }
