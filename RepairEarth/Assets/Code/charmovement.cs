@@ -47,12 +47,12 @@ public class charmovement : MonoBehaviour
 	    if (Input.GetKey (KeyCode.LeftArrow)) 
 		    {
 
-            GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range (-50, 0), 0));
+            GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range (-25, 0), 0));
         }
 	    if (Input.GetKey (KeyCode.RightArrow))
 		    {
 
-			    GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range (0, 50), 0));
+			    GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range (0, 25), 0));
 		    }
 
 		if (Input.GetKey (KeyCode.Escape))
@@ -76,13 +76,20 @@ public class charmovement : MonoBehaviour
 	    if (Input.GetKey (KeyCode.A)) 
 	    {
 
-		    GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range (-100, 0), 0));
+		    GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range (-25, 0), 0));
 	    }
 	    if (Input.GetKey (KeyCode.D))
 	    {
 		
-		    GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range (0, 100), 0));
-	    }	
+		    GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range (0, 25), 0));
+	    }
+
+        // stop if not pressing keys
+        if (inputX == 0)
+        {
+            this.GetComponent<Rigidbody2D>().velocity = new Vector3(0, this.GetComponent<Rigidbody2D>().velocity.y, 0);
+            this.GetComponent<Rigidbody2D>().angularVelocity = 0;
+        }
 }	
 			
 	void FixedUpdate()
