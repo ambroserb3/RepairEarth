@@ -14,8 +14,15 @@ public class TextManager : MonoBehaviour
 
     public StoryLine[] story;
     public Text textBox;
+    public PollutionSpawner pollution;
 
-    void SetText(int index)
+    void Update()
+    {
+        int index = Mathf.FloorToInt((story.Length - 1) * (0.0001f + ((float) pollution.NumTrash()) / pollution.TotalTrash()));
+        SetText(index);
+    }
+
+    public void SetText(int index)
     {
         textBox.text = story[index].line;
     }
