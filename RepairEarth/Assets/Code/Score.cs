@@ -3,30 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class collectibles : MonoBehaviour
+public class Score : MonoBehaviour
 {
-    public GameObject collectible;
     public Slider pollution;
+    private float timeLeft = 5f;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        timeLeft += Time.deltaTime;
+        if (timeLeft < 0)
+        {
+            pollution.value -= 1;
+            timeLeft = 5;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-
-    }
-
-    void OnCollisionEnter2D(Collision2D c)
-    {
-        if (c.gameObject.tag == "character")
-        {
-            Object.Destroy(collectible);
-            pollution.value += 5;
-        }
+        
     }
 }
-
