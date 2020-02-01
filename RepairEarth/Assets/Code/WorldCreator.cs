@@ -5,7 +5,7 @@ using UnityEngine;
 public class WorldCreator : MonoBehaviour
 {
     public GameObject dirtGround;
-    private Vector3 startLoc = new Vector3(0, -2f, 2);
+    public Vector3 startLoc = new Vector3(0, -2f, 2);
 
     // Start is called before the first frame update
     void Start()
