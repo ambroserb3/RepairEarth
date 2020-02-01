@@ -518,6 +518,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dirtGround: {fileID: 4997389996016732561, guid: 2d7028a1f0c0ff44d9fc600351b8f8d1,
     type: 3}
+  water: {fileID: 8714322859897841475, guid: 7baadd920abb2924b99f63575a1811c8, type: 3}
   grassGround: {fileID: 4997389996016732561, guid: 62e5601c2ebf710478056d3afa8b8887,
     type: 3}
   startLoc: {x: 0, y: -2, z: 2}
