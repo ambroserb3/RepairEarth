@@ -881,6 +881,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1127627791}
+  parallaxBg: {fileID: 1557035934}
+  parallaxScale: 3
 --- !u!1 &1557035933
 GameObject:
   m_ObjectHideFlags: 0
