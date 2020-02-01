@@ -47,8 +47,8 @@ public class charmovement : MonoBehaviour
 	    if (Input.GetKey (KeyCode.LeftArrow)) 
 		    {
 
-			    GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range (-50, 0), 0));
-		    }
+            GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range (-50, 0), 0));
+        }
 	    if (Input.GetKey (KeyCode.RightArrow))
 		    {
 
