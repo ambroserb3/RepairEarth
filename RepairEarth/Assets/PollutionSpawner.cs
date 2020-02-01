@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PollutionSpawner : MonoBehaviour
 {
-    public GameObject trash;
     public string spawnTag = "PollutionSpot";
 
     public float spawnTime = 1f;
@@ -52,5 +51,23 @@ public class PollutionSpawner : MonoBehaviour
                 return;
             }
         }
+    }
+
+    public int NumTrash()
+    {
+        int numTrash = 0;
+        foreach (GameObject obj in spawnLocs)
+        {
+            if (obj.activeSelf)
+            {
+                numTrash++;
+            }
+        }
+        return numTrash;
+    }
+
+    public int TotalTrash()
+    {
+        return spawnLocs.Length;
     }
 }
