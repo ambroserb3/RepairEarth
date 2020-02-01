@@ -17,7 +17,14 @@ public class collectibles : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (pollution.value <= 0)
+        {
+            Debug.Log("Pollution Ending.");
+        }
+        if (pollution.value >= 1)
+        {
+            Debug.Log("Earth Ending.");
+        }
     }
 
     void OnCollisionEnter2D(Collision2D c)
@@ -25,7 +32,7 @@ public class collectibles : MonoBehaviour
         if (c.gameObject.tag == "character")
         {
             Object.Destroy(collectible);
-            pollution.value += 5;
+            pollution.value += .05F;
         }
     }
 }
