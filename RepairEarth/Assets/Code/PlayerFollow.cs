@@ -20,6 +20,7 @@ public class PlayerFollow : MonoBehaviour
     {
         Vector3 newPos = transform.position;
         newPos.x = startX + player.position.x - playerStartX;
+        newPos.y = player.position.y - 1;
         transform.position = newPos;
     }
 }
