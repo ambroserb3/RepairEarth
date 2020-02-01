@@ -36,6 +36,14 @@ public class WorldCreator : MonoBehaviour
                 }
             }
         }
+
+        for (int i = -101; i <= 101; i += 202)
+        {
+            for (int j = -5; j < 5; ++j)
+            {
+                Instantiate(dirtGround, startLoc + new Vector3(i, j, 0), Quaternion.identity);
+            }
+        }
     }
 
     // Update is called once per frame
