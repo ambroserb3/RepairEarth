@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class collectibles : MonoBehaviour
 {
-    public GameObject collectible;
     public Slider pollution;
 
     // Start is called before the first frame update
@@ -29,10 +28,10 @@ public class collectibles : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D c)
     {
-        if (c.gameObject.tag == "character")
+        if (c.gameObject.tag == "Player")
         {
-            Object.Destroy(collectible);
             pollution.value += .05F;
+            gameObject.SetActive(false);
         }
     }
 }

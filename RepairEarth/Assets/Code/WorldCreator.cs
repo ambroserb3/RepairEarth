@@ -6,7 +6,8 @@ public class WorldCreator : MonoBehaviour
 {
     public GameObject dirtGround;
     public GameObject water;
-    private Vector3 startLoc = new Vector3(0, -2f, 2);
+    public GameObject grassGround;
+    public Vector3 startLoc = new Vector3(0, -2f, 2);
 
     // Start is called before the first frame update
     void Start()
@@ -19,8 +20,16 @@ public class WorldCreator : MonoBehaviour
 
                 if (i < -80 || i > -20)
                 {
-                    Instantiate(dirtGround, startLoc + new Vector3(i, j, 0), Quaternion.identity);
+                    if (j != 0)
+                    {
+                        Instantiate(dirtGround, startLoc + new Vector3(i, j, 0), Quaternion.identity);
+                    }
+                    else
+                    {
+                        Instantiate(grassGround, startLoc + new Vector3(i, j, 0), Quaternion.identity);
+                    }
                 }
+
                 else
                 {
                     Instantiate(water, startLoc + new Vector3(i, j, 0), Quaternion.identity);
