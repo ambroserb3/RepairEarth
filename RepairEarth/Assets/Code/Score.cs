@@ -14,7 +14,7 @@ public class Score : MonoBehaviour
         timeLeft += Time.deltaTime;
         if (timeLeft < 0)
         {
-            pollution.value -= 1;
+            pollution.value -= .01F;
             timeLeft = 5;
         }
     }
