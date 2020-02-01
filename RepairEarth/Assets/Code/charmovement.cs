@@ -35,13 +35,13 @@ public class charmovement : MonoBehaviour
         if (Input.GetKey (KeyCode.DownArrow))
 		{
 
-			GetComponent<Rigidbody2D>().AddForce(new Vector2(0, Random.Range (-50, 0)));
+			// GetComponent<Rigidbody2D>().AddForce(new Vector2(0, Random.Range (-50, 0)));
 		}
 
 		if (Input.GetKey (KeyCode.UpArrow))
 		{
 
-			GetComponent<Rigidbody2D>().AddForce(new Vector2(0, Random.Range (0, 50)));
+			// GetComponent<Rigidbody2D>().AddForce(new Vector2(0, Random.Range (0, 50)));
 		}
 		
 	    if (Input.GetKey (KeyCode.LeftArrow)) 
@@ -64,13 +64,13 @@ public class charmovement : MonoBehaviour
 	    if (Input.GetKey (KeyCode.S))
 	    {
 		
-		    GetComponent<Rigidbody2D>().AddForce(new Vector2(0, Random.Range (-100, 0)));
+		    // GetComponent<Rigidbody2D>().AddForce(new Vector2(0, Random.Range (-100, 0)));
 	    }
 	
 	    if (Input.GetKey (KeyCode.W))
 	    {
 		
-		    GetComponent<Rigidbody2D>().AddForce(new Vector2(0, Random.Range (0, 100)));
+		   // GetComponent<Rigidbody2D>().AddForce(new Vector2(0, Random.Range (0, 100)));
 	    }
 	
 	    if (Input.GetKey (KeyCode.A)) 
