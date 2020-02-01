@@ -13,7 +13,10 @@ public class WorldCreator : MonoBehaviour
         BoxCollider2D collider = (BoxCollider2D)dirtGround.gameObject.GetComponent<Collider2D>();
         for (int i = -100; i <= 100; ++i)
         {
-            Instantiate(dirtGround, startLoc + new Vector3(collider.size.x, 0, 0) * i, Quaternion.identity);
+            for (int j = -5; j <= 0; ++j)
+            {
+                Instantiate(dirtGround, startLoc + new Vector3(i, j, 0), Quaternion.identity);
+            }
         }
     }
 
