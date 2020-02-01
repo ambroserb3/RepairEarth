@@ -13,21 +13,10 @@ public class TextManager : MonoBehaviour
 {
 
     public StoryLine[] story;
+    public Text textBox;
 
-    // Start is called before the first frame update
-    void Start()
+    void SetText(int index)
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    void SetText()
-    {
-        
+        textBox.text = story[index].line;
     }
 }
