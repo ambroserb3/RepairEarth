@@ -5,6 +5,7 @@ using UnityEngine;
 public class WorldCreator : MonoBehaviour
 {
     public GameObject dirtGround;
+    public GameObject grassGround;
     public Vector3 startLoc = new Vector3(0, -2f, 2);
 
     // Start is called before the first frame update
@@ -15,7 +16,14 @@ public class WorldCreator : MonoBehaviour
         {
             for (int j = -5; j <= 0; ++j)
             {
-                Instantiate(dirtGround, startLoc + new Vector3(i, j, 0), Quaternion.identity);
+                if (j != 0)
+                {
+                    Instantiate(dirtGround, startLoc + new Vector3(i, j, 0), Quaternion.identity);
+                }
+                else
+                {
+                    Instantiate(grassGround, startLoc + new Vector3(i, j, 0), Quaternion.identity);
+                }
             }
         }
     }
