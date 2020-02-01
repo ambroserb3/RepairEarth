@@ -90,6 +90,15 @@ public class charmovement : MonoBehaviour
             this.GetComponent<Rigidbody2D>().velocity = new Vector3(0, this.GetComponent<Rigidbody2D>().velocity.y, 0);
             this.GetComponent<Rigidbody2D>().angularVelocity = 0;
         }
+
+        float maxVel = 10;
+        if (this.GetComponent<Rigidbody2D>().velocity.x > maxVel)
+        {
+            this.GetComponent<Rigidbody2D>().velocity = new Vector3(maxVel, this.GetComponent<Rigidbody2D>().velocity.y, 0);
+        } else if (this.GetComponent<Rigidbody2D>().velocity.x < -1 * maxVel)
+        {
+            this.GetComponent<Rigidbody2D>().velocity = new Vector3(-1 * maxVel, this.GetComponent<Rigidbody2D>().velocity.y, 0);
+        }
 }	
 			
 	void FixedUpdate()
