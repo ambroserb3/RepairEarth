@@ -1240,6 +1240,7 @@ GameObject:
   - component: {fileID: 1127627792}
   - component: {fileID: 1127627793}
   - component: {fileID: 1127627794}
+  - component: {fileID: 1127627795}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -1270,7 +1271,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127627789}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.3, y: -1.57, z: -7.4476047}
+  m_LocalPosition: {x: -4.16, y: 2, z: -7.4476047}
   m_LocalScale: {x: 0.327663, y: 0.34806502, z: 1}
   m_Children:
   - {fileID: 1529227114}
@@ -1293,7 +1294,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 3a292e479c95b3a4fa76904dee75edb4, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -1347,8 +1348,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1127627794
-BoxCollider2D:
+--- !u!68 &1127627794
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1361,18 +1362,33 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.25, y: 10.24}
-    newSize: {x: 10.25, y: 10.24}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 10.25, y: 10.24}
   m_EdgeRadius: 0
+  m_Points:
+  - {x: -4.82086, y: 4.91504}
+  - {x: 5.0629134, y: 4.6438837}
+  - {x: 5.125, y: -1.6049645}
+--- !u!68 &1127627795
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127627789}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.5191709, y: -4.479006}
+  - {x: -4.247834, y: -4.0830035}
+  - {x: -4.4480963, y: 4.5919766}
+  - {x: 4.565249, y: 4.610742}
+  - {x: 4.488656, y: -4.063335}
+  - {x: 0.45341754, y: -4.457254}
 --- !u!1 &1363906518 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1295601884436008649, guid: 99967371b680d4b4ead44fb5d46572f9,

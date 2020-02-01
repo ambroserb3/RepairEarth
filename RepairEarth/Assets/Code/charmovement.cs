@@ -82,7 +82,14 @@ public class charmovement : MonoBehaviour
 	    {
 		
 		    GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range (0, 25), 0));
-	    }	
+	    }
+
+        // stop if not pressing keys
+        if (inputX == 0)
+        {
+            this.GetComponent<Rigidbody2D>().velocity = new Vector3(0, this.GetComponent<Rigidbody2D>().velocity.y, 0);
+            this.GetComponent<Rigidbody2D>().angularVelocity = 0;
+        }
 }	
 			
 	void FixedUpdate()
