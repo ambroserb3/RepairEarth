@@ -21,7 +21,7 @@ public class MotherEarth : MonoBehaviour
     {
         var position = Camera.main.WorldToScreenPoint(gameObject.transform.position);
         // Make a text field that modifies stringToEdit.
-        GUI.Label(new Rect(position.x - 100, Screen.height - position.y + 200, 200, 1000), getSpeechString());
+        GUI.Label(new Rect(position.x - 100, Screen.height - position.y + 300, 200, 1000), getSpeechString());
     }
 
     string getSpeechString()
