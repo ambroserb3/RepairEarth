@@ -49,19 +49,45 @@ public class WorldCreator : MonoBehaviour
             }
         }
 
-        for (int i = -90; i <= 90; ++i)
+        List<float> treeLocs = new List<float>();
+        treeLocs.Add(-95);
+        treeLocs.Add(-90f);
+        treeLocs.Add(-89f);
+        treeLocs.Add(-88.5f);
+        treeLocs.Add(-18f);
+        treeLocs.Add(-17f);
+        treeLocs.Add(-16f);
+        treeLocs.Add(-15.5f);
+        treeLocs.Add(-14f);
+        treeLocs.Add(20f);
+        treeLocs.Add(25f);
+        treeLocs.Add(28f);
+        treeLocs.Add(30f);
+        treeLocs.Add(30.5f);
+        treeLocs.Add(60f);
+        treeLocs.Add(61f);
+        treeLocs.Add(62f);
+        treeLocs.Add(62.5f);
+        treeLocs.Add(63f);
+        treeLocs.Add(87f);
+        treeLocs.Add(88f);
+
+        for (int i = 0; i < treeLocs.Count; ++i)
         {
-            if (i < -80 || i > -20)
+            float loc = treeLocs[i];
+            GameObject toMake = treeYellow;
+            if (treeLocs[i] > -20)
             {
-                if (j != 0)
+                if (treeLocs[i] < 40)
                 {
-                    Instantiate(dirtGround, startLoc + new Vector3(i, j, 0), Quaternion.identity);
-                }
-                else
+                    toMake = treeWhite;
+                } else
                 {
-                    Instantiate(grassGround, startLoc + new Vector3(i, j, 0), Quaternion.identity);
+                    toMake = treeGreen;
                 }
             }
+
+            Instantiate(toMake, startLoc + new Vector3(i, 0, 2), Quaternion.identity);
         }
     }
 

@@ -127,6 +127,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1936264828615887700, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
+        type: 3}
+      propertyPath: m_Name
+      value: Trash (10)
+      objectReference: {fileID: 0}
     - target: {fileID: 1936264828615887689, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
         type: 3}
       propertyPath: pollution
@@ -186,11 +191,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1936264828615887700, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
-        type: 3}
-      propertyPath: m_Name
-      value: Trash (10)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b, type: 3}
@@ -308,6 +308,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1936264828615887700, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
+        type: 3}
+      propertyPath: m_Name
+      value: Trash (9)
+      objectReference: {fileID: 0}
     - target: {fileID: 1936264828615887689, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
         type: 3}
       propertyPath: pollution
@@ -367,11 +372,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1936264828615887700, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
-        type: 3}
-      propertyPath: m_Name
-      value: Trash (9)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b, type: 3}
@@ -628,6 +628,12 @@ MonoBehaviour:
   water: {fileID: 8714322859897841475, guid: 7baadd920abb2924b99f63575a1811c8, type: 3}
   grassGround: {fileID: 4997389996016732561, guid: 62e5601c2ebf710478056d3afa8b8887,
     type: 3}
+  treeGreen: {fileID: 8389224127994717813, guid: e5333b73f1e298a40aea5e2b5f18f45f,
+    type: 3}
+  treeWhite: {fileID: 1120796831623624283, guid: 1097937f06fd86b43abe822899acab80,
+    type: 3}
+  treeYellow: {fileID: 774697181885091452, guid: 44f21b9b821f6b6459f19eac99390cf3,
+    type: 3}
   startLoc: {x: 0, y: -2, z: 2}
 --- !u!4 &623767502
 Transform:
@@ -686,6 +692,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1936264828615887700, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
+        type: 3}
+      propertyPath: m_Name
+      value: Trash (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 1936264828615887689, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
         type: 3}
       propertyPath: pollution
@@ -745,11 +756,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1936264828615887700, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
-        type: 3}
-      propertyPath: m_Name
-      value: Trash (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b, type: 3}
@@ -833,6 +839,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1936264828615887700, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
+        type: 3}
+      propertyPath: m_Name
+      value: Trash (7)
+      objectReference: {fileID: 0}
     - target: {fileID: 1936264828615887689, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
         type: 3}
       propertyPath: pollution
@@ -892,11 +903,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1936264828615887700, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
-        type: 3}
-      propertyPath: m_Name
-      value: Trash (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b, type: 3}
@@ -1016,6 +1022,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1936264828615887700, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
+        type: 3}
+      propertyPath: m_Name
+      value: Trash (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 1936264828615887689, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
         type: 3}
       propertyPath: pollution
@@ -1075,11 +1086,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1936264828615887700, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
-        type: 3}
-      propertyPath: m_Name
-      value: Trash (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b, type: 3}
@@ -1198,6 +1204,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1936264828615887700, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
+        type: 3}
+      propertyPath: m_Name
+      value: Trash (8)
+      objectReference: {fileID: 0}
     - target: {fileID: 1936264828615887689, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
         type: 3}
       propertyPath: pollution
@@ -1258,11 +1269,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1936264828615887700, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
-        type: 3}
-      propertyPath: m_Name
-      value: Trash (8)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b, type: 3}
 --- !u!1001 &1299283742
@@ -1272,6 +1278,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1936264828615887700, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
+        type: 3}
+      propertyPath: m_Name
+      value: Trash (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 1936264828615887689, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
         type: 3}
       propertyPath: pollution
@@ -1331,11 +1342,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1936264828615887700, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
-        type: 3}
-      propertyPath: m_Name
-      value: Trash (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b, type: 3}
@@ -1491,6 +1497,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1936264828615887700, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
+        type: 3}
+      propertyPath: m_Name
+      value: Trash (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 1936264828615887689, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
         type: 3}
       propertyPath: pollution
@@ -1550,11 +1561,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1936264828615887700, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
-        type: 3}
-      propertyPath: m_Name
-      value: Trash (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b, type: 3}
@@ -1862,6 +1868,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1936264828615887700, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
+        type: 3}
+      propertyPath: m_Name
+      value: Trash (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 1936264828615887689, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
         type: 3}
       propertyPath: pollution
@@ -1922,11 +1933,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1936264828615887700, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
-        type: 3}
-      propertyPath: m_Name
-      value: Trash (4)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b, type: 3}
 --- !u!1001 &1736184246
@@ -1936,6 +1942,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1936264828615887700, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
+        type: 3}
+      propertyPath: m_Name
+      value: Trash (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 1936264828615887689, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
         type: 3}
       propertyPath: pollution
@@ -1995,11 +2006,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1936264828615887700, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
-        type: 3}
-      propertyPath: m_Name
-      value: Trash (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b, type: 3}
@@ -2180,7 +2186,7 @@ MonoBehaviour:
   - line: Wanna fuck?
   - line: kk bby
   textBox: {fileID: 1804491217}
-  pollution: {fileID: 1537649235}
+  pollution: {fileID: 0}
 --- !u!1 &2140380190
 GameObject:
   m_ObjectHideFlags: 0
@@ -2250,7 +2256,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This Is A Test
+  m_Text: asdf
 --- !u!114 &2140380193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2286,6 +2292,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1936264828615887700, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
+        type: 3}
+      propertyPath: m_Name
+      value: Trash
+      objectReference: {fileID: 0}
     - target: {fileID: 1936264828615887689, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
         type: 3}
       propertyPath: pollution
@@ -2345,11 +2356,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1936264828615887700, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b,
-        type: 3}
-      propertyPath: m_Name
-      value: Trash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1887dd86cc2a63f4c9bfe1ac9ca53b4b, type: 3}
