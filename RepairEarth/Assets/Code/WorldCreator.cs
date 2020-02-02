@@ -87,7 +87,7 @@ public class WorldCreator : MonoBehaviour
                 }
             }
 
-            Instantiate(toMake, startLoc + new Vector3(i, 0, 2), Quaternion.identity);
+            Instantiate(toMake, startLoc + new Vector3(loc, 1.7f, 2), Quaternion.identity);
         }
     }
 
