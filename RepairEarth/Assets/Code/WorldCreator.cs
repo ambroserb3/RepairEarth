@@ -48,21 +48,6 @@ public class WorldCreator : MonoBehaviour
                 Instantiate(dirtGround, startLoc + new Vector3(i, j, 0), Quaternion.identity);
             }
         }
-
-        for (int i = -90; i <= 90; ++i)
-        {
-            if (i < -80 || i > -20)
-            {
-                if (j != 0)
-                {
-                    Instantiate(dirtGround, startLoc + new Vector3(i, j, 0), Quaternion.identity);
-                }
-                else
-                {
-                    Instantiate(grassGround, startLoc + new Vector3(i, j, 0), Quaternion.identity);
-                }
-            }
-        }
     }
 
     // Update is called once per frame
