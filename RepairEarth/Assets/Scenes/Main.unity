@@ -220,11 +220,28 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 374083512}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38862ab749397a74894148582923abd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dirtyEarth:
+  - {fileID: 21300000, guid: dd87581029a5c714c87aa07cd10d1688, type: 3}
+  - {fileID: 21300000, guid: 2ed9514c178a4534caf05db20b2b6fde, type: 3}
+  - {fileID: 21300000, guid: 5a33c8cdf30f9214fb3b0cb78e9af5c7, type: 3}
+  - {fileID: 21300000, guid: dcda4b692db77864d9a3f2fede5966fd, type: 3}
+  - {fileID: 21300000, guid: 2ffe2a20151cc9d42bd63aa477c05f5e, type: 3}
+  - {fileID: 21300000, guid: 58609d94f6d1d534f885359c124fa7cc, type: 3}
+  cleanEarth:
+  - {fileID: 21300000, guid: 146f634b22977c14c9dc6cbe298ce880, type: 3}
+  - {fileID: 21300000, guid: 8f73f378fd2e15f4783ae9d9d326353e, type: 3}
+  - {fileID: 21300000, guid: 50c85fe799669d94b82beedd8a988b71, type: 3}
+  - {fileID: 21300000, guid: 29c64a9197e7b194899c072ba587fd91, type: 3}
+  - {fileID: 21300000, guid: b3fa8317bebe2ce44bbb50007eb6ca01, type: 3}
+  - {fileID: 21300000, guid: 9048e2834d0cc6b42840a20dd69f0757, type: 3}
+  pollution: {fileID: 1537649235}
+  threshold: 5
+  animLength: 0.5
 --- !u!212 &374083514
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -634,8 +651,10 @@ MonoBehaviour:
     type: 3}
   treeYellow: {fileID: 774697181885091452, guid: 44f21b9b821f6b6459f19eac99390cf3,
     type: 3}
+  treeGreen: {fileID: 0}
+  treeWhite: {fileID: 0}
+  treeYellow: {fileID: 0}
   startLoc: {x: 0, y: -2, z: 2}
---- !u!4 &623767502
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

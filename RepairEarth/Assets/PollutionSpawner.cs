@@ -8,6 +8,8 @@ public class PollutionSpawner : MonoBehaviour
 
     public float spawnTime = 1f;
 
+    public int startingTrash = 5;
+
     private float timeToSpawn;
     private GameObject[] spawnLocs;
 
@@ -20,6 +22,10 @@ public class PollutionSpawner : MonoBehaviour
             obj.SetActive(false);
         }
         timeToSpawn = spawnTime;
+        for (int i = 0; i < startingTrash; i++)
+        {
+            SpawnTrash();
+        }
     }
 
     // Update is called once per frame
