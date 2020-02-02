@@ -48,6 +48,47 @@ public class WorldCreator : MonoBehaviour
                 Instantiate(dirtGround, startLoc + new Vector3(i, j, 0), Quaternion.identity);
             }
         }
+
+        List<float> treeLocs = new List<float>();
+        treeLocs.Add(-95);
+        treeLocs.Add(-90f);
+        treeLocs.Add(-89f);
+        treeLocs.Add(-88.5f);
+        treeLocs.Add(-18f);
+        treeLocs.Add(-17f);
+        treeLocs.Add(-16f);
+        treeLocs.Add(-15.5f);
+        treeLocs.Add(-14f);
+        treeLocs.Add(20f);
+        treeLocs.Add(25f);
+        treeLocs.Add(28f);
+        treeLocs.Add(30f);
+        treeLocs.Add(30.5f);
+        treeLocs.Add(60f);
+        treeLocs.Add(61f);
+        treeLocs.Add(62f);
+        treeLocs.Add(62.5f);
+        treeLocs.Add(63f);
+        treeLocs.Add(87f);
+        treeLocs.Add(88f);
+
+        for (int i = 0; i < treeLocs.Count; ++i)
+        {
+            float loc = treeLocs[i];
+            GameObject toMake = treeYellow;
+            if (treeLocs[i] > -20)
+            {
+                if (treeLocs[i] < 40)
+                {
+                    toMake = treeWhite;
+                } else
+                {
+                    toMake = treeGreen;
+                }
+            }
+
+            Instantiate(toMake, startLoc + new Vector3(loc, 1.7f, 2), Quaternion.identity);
+        }
     }
 
     // Update is called once per frame
